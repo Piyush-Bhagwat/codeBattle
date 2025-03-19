@@ -10,17 +10,38 @@ import {
     MapPin,
     IndianRupee,
     Layers,
+    Calendar,
 } from "lucide-react";
 
 import logo from "../image/logo.jpg";
 import logo2 from "../image/logo2.jpg";
+import logo3 from "../image/logo3.jpg";
+import logo4 from "../image/logo4.jpg";
 
 function App() {
     return (
         <div className="min-h-screen mb-px-40 px-3 bg-gradient-to-br from-[#5e17eb] to-[#cb6ce6]">
-            <nav className="flex gap-5">
-                <img src={logo} alt="" className="rounded-full w-20 aspect-square" />
-                <img src={logo2} alt="" className="rounded-full w-20 aspect-square" />
+            <nav className="flex gap-5 pt-4 justify-center">
+                <img
+                    src={logo}
+                    alt=""
+                    className="rounded-full w-12 aspect-square"
+                />
+                <img
+                    src={logo2}
+                    alt=""
+                    className="rounded-full w-12 aspect-square"
+                />
+                <img
+                    src={logo3}
+                    alt=""
+                    className="rounded w-12 aspect-square"
+                />
+                <img
+                    src={logo4}
+                    alt=""
+                    className="rounded w-12 aspect-square"
+                />
             </nav>
             {/* Hero Section */}
             <header className="container mx-auto px-4 py-16 text-white">
@@ -29,7 +50,13 @@ function App() {
                     <h1 className="text-5xl font-bold mb-4">Code Battle</h1>
                     <p className="text-xl mb-8">SIOM MCA Department</p>
                     <button className="bg-white text-[#5e17eb] px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all">
-                       <a target="_blank" href="https://forms.gle/m3cwPrgPtqEN1Dz87"> Register Now </a>
+                        <a
+                            target="_blank"
+                            href="https://forms.gle/m3cwPrgPtqEN1Dz87"
+                        >
+                            {" "}
+                            Register Now{" "}
+                        </a>
                     </button>
                 </div>
             </header>
@@ -79,6 +106,12 @@ function App() {
                                         <MapPin className="text-[#cb6ce6]" />
                                         <span>
                                             <strong>Venue:</strong> SIOM, Pune
+                                        </span>
+                                    </li>
+                                    <li className="flex items-center gap-2">
+                                        <Calendar className="text-[#cb6ce6]" />
+                                        <span>
+                                            <strong>Date:</strong> 2 April 2025
                                         </span>
                                     </li>
                                 </ul>
