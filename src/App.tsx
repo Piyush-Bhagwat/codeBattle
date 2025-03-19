@@ -224,7 +224,7 @@ function App() {
 
             {/* Footer */}
             <footer className="container mx-auto px-4 py-8 text-white text-center">
-                <p>© 2024 SIOM MCA Department. All rights reserved.</p>
+                <p>© 2025 SIOM MCA Department. All rights reserved.</p>
                 created by{" "}
                 <a
                     href="https://github.com/Piyush-Bhagwat"
